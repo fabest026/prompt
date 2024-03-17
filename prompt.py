@@ -136,6 +136,8 @@ with st.sidebar:
             
             """
             ]
+    # Submit Button
+    submit_button = st.button("Generate")
 
 if submit_button:
     # Display the spinner
