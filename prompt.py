@@ -216,7 +216,6 @@ footer_css = """
 footer_html = f"""
 <div class="footer">
     <p>Developed by: Farhan Akbar</p>
-    <a href="https://github.com/fabest026"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=for-the-badge&logo=github" alt="GitHub"/></a>
     <a href="https://www.linkedin.com/in/farhan-akbar-ai/"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn"/></a>
     <a href="mailto:rasolehri@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=email" alt="Email"/></a>
 </div>
@@ -225,4 +224,5 @@ footer_html = f"""
 # Combine CSS and HTML for the footer
 st.markdown(footer_css, unsafe_allow_html=True)
 st.markdown(footer_html, unsafe_allow_html=True)
+
 
