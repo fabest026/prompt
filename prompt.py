@@ -77,7 +77,7 @@ h3 {
     margin-bottom: 24px;
 }
 </style>
-<h3 style="text-align: center; color: black;">🔥 Make Your Creativity Shine with AI Prompt Engineer! 🔥<br />Generate prompts for blogs, social media, content marketing, and more!</h3>
+<h3 style="text-align: center; color: black;">🔥 Enhance Your Creativity with AI Prompt Engineer! 🔥<br />Generate prompts for blogs, social media, content marketing, and more!</h3>
 ''', unsafe_allow_html=True)
 
 # sidebar for the user input
