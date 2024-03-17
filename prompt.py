@@ -142,6 +142,7 @@ with st.sidebar:
             Completeness: Provide as much relevant information as possible to help guide the AI. If there are crucial details about the scenario or question that the AI wouldn't know, make sure to include them.
             Instruction: If you want a particular style or format for the response, specify this in the prompt. For instance, if you want a response in the form of a poem, bullet points, or formal language, indicate this.
             Open-ended vs. Closed-ended: If you're looking for creative or expansive responses, use open-ended questions. For more specific, concise answers, use closed-ended questions.
+            Grammar and Spelling: Check your prompt for grammar and spelling mistakes. 
             
             Goal: {task} {topic} {voice_tones} {audience} {writing_styles} of {word_count} words and {character_count} characters optional.
             Prompt Context: Provide a brief context or situation where the prompt will be used {prompt_context}  
@@ -157,7 +158,7 @@ with st.sidebar:
 
 if submit_button:
     # Display the spinner
-    with st.spinner("Converting text to prompt..."):
+    with st.spinner("Converting desired input to prompt..."):
         # Generate the response
         response = model.generate_content(prompt_parts)
         # Write results
