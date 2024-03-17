@@ -62,10 +62,10 @@ with st.sidebar:
     st.subheader("Enter Details for the Section")
     
     # Topic
-    topic = st.text_input("Topic: [What is the topic of the prompt? Eg: python, machine learning,..]")
+    topic = st.text_input("Topic: What is the topic of the prompt? Eg: python, machine learning,..")
     
     # Goal
-    task = st.text_area(" Task: [What do you want to achieve with the prompt? Eg: writing a blog, analyzing a text,..]")
+    task = st.text_area(" Task: What do you want to achieve with the prompt? Eg: writing a blog, analyzing a text,..")
     
     # Add the Voice Tones
     voice_tones = st.sidebar.selectbox("Choose Voice Tones:", ["Formal","Friendly", "Bold", "Adventurous", "Witty", "Professional", "Casual", "Informative", "Creative", "Trendy", "Caring", "Cheerful", "Excited", "Funny", "Sad", "Serious", "Tense", "Vulnerable", "Angry", "Surprised", "Worried", "Assertive", "Confident", "Cooperative", "Encouraging" ])
