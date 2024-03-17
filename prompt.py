@@ -159,42 +159,6 @@ if submit_button:
 
 # Render profile footer in sidebar at the "bottom"
 # Set a background image
-def set_background_image():
-    st.markdown(
-        """
-        <style>
-        .stApp {
-            background-image: url("https://images.pexels.com/photos/4097159/pexels-photo-4097159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-            background-size: cover;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-set_background_image()
-
-# Set a background image for the sidebar
-sidebar_background_image = '''
-<style>
-[data-testid="stSidebar"] {
-    background-image: url("https://www.pexels.com/photo/abstract-background-with-green-smear-of-paint-6423446/");
-    background-size: cover;
-}
-</style>
-'''
-
-st.sidebar.markdown(sidebar_background_image, unsafe_allow_html=True)
-
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 # Custom CSS to inject into the Streamlit app
 footer_css = """
 <style>
@@ -218,7 +182,6 @@ footer_html = f"""
     <p>Developed by: Farhan Akbar</p>
     <a href="https://www.linkedin.com/in/farhan-akbar-ai/"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn"/></a>
     <a href="mailto:rasolehri@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=email" alt="Email"/></a>
-    <a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=for-the-badge&logo=github" alt="GitHub"/></a>
 </div>
 """
 
