@@ -49,11 +49,36 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+
+
 # title of our app
-st.title('✍️ AI Prompt Engineer')
+#st.title('✍️ AI Prompt Engineer')
+
+# Add the Title
+st.markdown(
+    "<h1 style='text-align: center; color: black;'>"
+    "✨ AI Prompt Engineer"
+    "</h1>",
+    unsafe_allow_html=True
+)
+
 
 # create a subheader
-st.subheader("You can generate any type of Prompt for your blog or any other purpose. 🤖")
+#st.subheader("You can generate any type of Prompt for your blog or any other purpose. 🤖")
+
+# create a subheader
+st.markdown('''
+<style>
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+</style>
+<h3 style="text-align: center; color: black;">🔥 Make Your Creativity Shine with AI Prompt Engineer! 🔥<br />Generate prompts for blogs, social media, content marketing, and more!</h3>
+''', unsafe_allow_html=True)
 
 # sidebar for the user input
 
