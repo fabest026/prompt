@@ -43,7 +43,7 @@ model = genai.GenerativeModel(model_name="gemini-pro", generation_config=generat
 
 # Navbar
 st.set_page_config(
-    page_title="Prompt Generator",
+    page_title="Prompt Engineer",
     page_icon="👨‍🎓",
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -83,8 +83,24 @@ h3 {
 # sidebar for the user input
 
 with st.sidebar:
+    st.markdown(
+        "<style>h1 {text-align: center;}</style>",
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        "<style>h1 {text-align: center; color: black;}</style>",
+        unsafe_allow_html=True
+    )
     st.title("Input Settings")
-    st.subheader("Enter Details for the Section")
+    
+    st.markdown(
+        "<style>"
+        "h4 {text-align: left; color: black; margin-top: 4px;}"
+        "p {text-align: left; color: black;}"
+        "</style>",
+        unsafe_allow_html=True
+    )
+    st.markdown("<h4>Enter Details for the Prompt: </h4>", unsafe_allow_html=True)
     
     # Topic
     topic = st.text_input("Topic: What is the topic of the prompt? Eg: python, machine learning,..")
